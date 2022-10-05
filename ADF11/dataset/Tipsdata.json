@@ -1,0 +1,55 @@
+{
+	"name": "Tipsdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TSWBLOB1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "tsw1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tips.csv",
+				"container": "tswcontainer1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "total_bill",
+				"type": "String"
+			},
+			{
+				"name": "tip",
+				"type": "String"
+			},
+			{
+				"name": "sex",
+				"type": "String"
+			},
+			{
+				"name": "smoker",
+				"type": "String"
+			},
+			{
+				"name": "day",
+				"type": "String"
+			},
+			{
+				"name": "time",
+				"type": "String"
+			},
+			{
+				"name": "size",
+				"type": "String"
+			}
+		]
+	}
+}
